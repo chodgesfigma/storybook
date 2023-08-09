@@ -32,7 +32,9 @@ export const Button = ({
       style={{  }}
       {...props}
     >
+      <i></i>
       {label}
+      <i></i>
     </button>
   );
 };
