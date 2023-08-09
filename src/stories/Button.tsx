@@ -9,7 +9,6 @@ interface ButtonProps {
   showBeforeIcon?: boolean;
   showAfterIcon?: boolean;
   showLabel?: boolean;
-  backgroundColor?: string;
   label: string;
   onClick?: () => void;
 }
