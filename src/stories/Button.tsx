@@ -9,21 +9,8 @@ interface ButtonProps {
   showBeforeIcon?: boolean;
   showAfterIcon?: boolean;
   showLabel?: boolean;
-  /**
-   * What background color to use
-   */
   backgroundColor?: string;
-  /**
-   * How large should the button be?
-   */
-  size?: 'small' | 'medium' | 'large';
-  /**
-   * Button contents
-   */
   label: string;
-  /**
-   * Optional click handler
-   */
   onClick?: () => void;
 }
 
@@ -32,9 +19,9 @@ interface ButtonProps {
  */
 export const Button = ({
   style = 'primary',
-  size = 'medium',
-  show
-  backgroundColor,
+  showBeforeIcon = true,
+  showAfterIcon = true,
+  showLabel = true,
   label,
   ...props
 }: ButtonProps) => {
@@ -42,7 +29,7 @@ export const Button = ({
     <button
       type="button"
       className={['button', `button--${style}`].join(' ')}
-      style={{ backgroundColor }}
+      style={{  }}
       {...props}
     >
       {label}
