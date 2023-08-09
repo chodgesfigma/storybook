@@ -25,6 +25,7 @@ export const Primary: Story = {
   args: {
     style: 'primary',
     label: 'Button',
+    state: 'active',
     showBeforeIcon: true,
     showAfterIcon: true,
     showLabel: true,
@@ -35,6 +36,7 @@ export const Secondary: Story = {
   args: {
     style: 'secondary',
     label: 'Button',
+    state: 'active',
     showBeforeIcon: true,
     showAfterIcon: true,
     showLabel: true,
@@ -45,6 +47,7 @@ export const Success: Story = {
   args: {
     style: 'success',
     label: 'Button',
+    state: 'active',
     showBeforeIcon: true,
     showAfterIcon: true,
     showLabel: true,
@@ -55,6 +58,7 @@ export const Warning: Story = {
   args: {
     style: 'warning',
     label: 'Button',
+    state: 'active',
     showBeforeIcon: true,
     showAfterIcon: true,
     showLabel: true,
@@ -65,6 +69,7 @@ export const Danger: Story = {
   args: {
     style: 'danger',
     label: 'Button',
+    state: 'active',
     showBeforeIcon: true,
     showAfterIcon: true,
     showLabel: true,

@@ -5,7 +5,8 @@ interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
-  style?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger'
+  style?: 'primary' | 'secondary' | 'success' | 'warning' | 'danger';
+  state?: 'active' | 'hover' | 'disabled';
   showBeforeIcon?: boolean;
   showAfterIcon?: boolean;
   showLabel?: boolean;
@@ -18,6 +19,7 @@ interface ButtonProps {
  */
 export const Button = ({
   style = 'primary',
+  state = 'active',
   showBeforeIcon = true,
   showAfterIcon = true,
   showLabel = true,
